@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ExampleHR Coming Soon!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Welcome to ExampleHR</h2>
+<p>We will be creating something fun with this!</p>
+
+<header>
+  <%= image_tag 'MacbookUser.jpg' %>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><%= link_to 'Payroll', about_path %></li>
+      <li><a href="#">Benefits</a></li>
+      <li><a href="#">Onboarding</a></li>
+    </ul>
+    
+  </nav>
+  
+  <article>
+    <h1>Benefits</h1>
+    <p>Simplify your benefits administration with ExampleHR</p>
+    <p>See why companies of all sizes are switching to ExampleHR for their business needs.</p>
+  </article>
+</section>
+
+<footer>
+  <p>This is a footer.</p>
+</footer>
+
+</body>
+</html>
