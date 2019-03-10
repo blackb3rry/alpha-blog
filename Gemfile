@@ -9,7 +9,7 @@ end
 gem 'rails', '~> 5.0.7', '>= 5.0.7.1'
 # Use sqlite3 as the database for Active Record
 
-ruby '2.5.3'
+ruby '2.6.0'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
