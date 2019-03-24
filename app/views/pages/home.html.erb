@@ -54,12 +54,13 @@ article {
 }
 
 /* Style the footer */
+/*
 footer {
   background-color: #777;
   padding: 10px;
   text-align: center;
   color: white;
-}
+} */
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
 @media (max-width: 600px) {
@@ -72,34 +73,13 @@ footer {
 </head>
 <body>
 
+<div class="center jumbotron">
+  <h1>ExampleHR</h1>
+  <%= link_to "Sign up now", "#", class: "btn btn-danger btn-xlarge" %>
+</div>
+
 <h2>Welcome to ExampleHR</h2>
 <p>We will be creating something fun with this!</p>
-
-<header>
-  <%= image_tag 'MacbookUser.jpg' %>
-</header>
-
-<section>
-  <nav>
-    <ul>
-      <li><%= link_to 'Payroll', about_path %></li>
-      <li><a href="#">Benefits</a></li>
-      <li><a href="#">Onboarding</a></li>
-      <li><%= link_to 'Alpha Blog', articles_path %></li>
-    </ul>
-    
-  </nav>
-  
-  <article>
-    <h1>Benefits</h1>
-    <p>Simplify your benefits administration with ExampleHR</p>
-    <p>See why companies of all sizes are switching to ExampleHR for their business needs.</p>
-  </article>
-</section>
-
-<footer>
-  <p>This is a footer.</p>
-</footer>
 
 </body>
 </html>
